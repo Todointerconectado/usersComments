@@ -92,9 +92,6 @@ body {
 }
 
 /* ------------ MAIN - cards ------------ */
-.main {
-    /* border: 2px solid rgb(0, 68, 255); */
-}
 .cards {
     display: flex;
     flex-direction: column;
