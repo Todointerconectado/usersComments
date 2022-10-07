@@ -1,0 +1,236 @@
+@import url('https://fonts.googleapis.com/css2?family=League+Spartan:wght@400;500;700&display=swap');
+
+:root {
+    /* Colors */
+    /* Primary */
+    --veryDarkMagenta: hsl(300, 43%, 22%);
+    --softPink: hsl(333, 80%, 67%);
+
+    /* Neutral */
+    --darkGrayishMagenta: hsl(303, 10%, 53%);
+    --darkGrayishMagentaMax: hsl(306, 15%, 49%);
+    --lightGrayishMagenta: hsl(300, 24%, 96%);
+    --white: hsl(0, 0%, 100%);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'League Spartan', sans-serif;
+    /* Suavizamos el scroll */
+    scroll-behavior: smooth;
+}
+
+body {
+    border: 2px solid red;
+    margin: 0px auto;
+    padding: 80px 20px 0 20px;
+    width: 100%;
+    height: auto;
+    background: url(/images/bg-pattern-top-mobile.svg), url(/images/bg-pattern-bottom-mobile.svg);
+    background-repeat: no-repeat;
+    background-position: top left, bottom right;
+
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+/* ------------ HEADER - TITLE ------------ */
+
+.headerTitle {
+    padding: 0 0 30px 0;
+    width: 100%;
+    height: auto;
+    color: var(--veryDarkMagenta);
+    font-size: 38px;
+    font-weight: 700;
+    line-height: 30px;
+    text-align: center;
+}
+
+.headerText {
+    padding: 0 28px;
+    color: var(--darkGrayishMagenta);
+    text-align: center;
+    line-height: 20px;
+    font-size: 14px;
+    font-weight: 500;
+}
+
+/* ------------ ASIDE - STARS------------ */
+.aside ul {
+    margin: 0px auto;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.stars {
+    border-radius: 8px;
+    list-style: none;
+    width: 100%;
+    height: 80px;
+    background: var(--lightGrayishMagenta);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+.stars figure {
+    text-align: center;
+}
+/* .stars figure::before {
+    content: "⭐ ⭐ ⭐ ⭐ ⭐";
+} */
+.text {
+    font-weight: 700;
+    color: var(--darkGrayishMagentaMax);
+    text-align: center;
+}
+
+/* ------------ MAIN - cards ------------ */
+.main {
+    /* border: 2px solid rgb(0, 68, 255); */
+}
+.cards {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.card {
+    overflow: hidden;
+    border-radius: 10px;
+    padding: 37px;
+    background: var(--veryDarkMagenta);
+    max-width: 430px;
+    height: 247px;
+    color: var(--white);
+    display: grid;
+    gap: 32px;
+    grid-template-columns: 1fr;
+    grid-template-rows: repeat(2, 1fr);
+}
+
+.card figure {
+    height: 50px;
+    display: grid;
+    grid-template-columns: 1fr 3fr;
+    grid-template-rows: 1fr;
+    align-items: center;
+}
+.card figure img {
+    border-radius: 50%;
+    width: 40px;
+}
+.card figure figcaption {
+    width: 150px;
+}
+.status {
+    padding-top: 5px;
+    color: var(--softPink);
+    display: inline-flex;
+}
+
+.card p {
+    line-height: 1.3;
+}
+
+
+
+/* ------------ FOOTER ------------ */
+.footer {
+    /* border: 1px solid brown; */
+    width: 100%;
+    height: auto;
+    font-size: 11px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.footer a {
+    color: hsl(228, 45%, 44%);
+}
+
+/*---------------------------------- Redes social's ----------------------------------*/
+.container-contacts {
+    margin: 10px 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    cursor: default;
+    flex-wrap: wrap;
+}
+
+.container-contacts_redSocial {
+    margin: 0px;
+    list-style: none;
+    width: auto;
+    height: auto;
+}
+
+.container-contacts_figure {
+    margin: 0;
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.container-contacts_figure a {
+    margin-bottom: 5px;
+    border-radius: 10px;
+    width: auto;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-decoration: none;
+}
+
+.container-contacts_figure a:hover {
+    filter: drop-shadow(0 0 3px var(--veryDarkMagenta));
+}
+
+.container-contacts_figure-img {
+    padding: 0;
+    width: 32px;
+    display: block;
+}
+
+/* ---- Boton de subida ----*/
+.fleche{
+    /* border: 1px solid red; */
+    margin: 10px auto;
+    border-radius: 50%;
+    padding: 0;
+    width: 30px;
+    height: 30px;
+    cursor: pointer;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    transition: transform 1s;
+}
+.fleche:hover {
+    transform: scale(1.2);
+}
+.symbol {
+    width: 100%;
+    height: 100%;
+}

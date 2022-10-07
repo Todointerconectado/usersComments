@@ -1,61 +1,168 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="es">
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <!-- displays site properly based on user's device -->
-
-    <link
-      rel="icon"
-      type="image/png"
-      sizes="32x32"
-      href="./images/favicon-32x32.png"
-    />
-
     <title>Frontend Mentor | Social proof section</title>
-
-    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-    <style>
-      .attribution {
-        font-size: 11px;
-        text-align: center;
-      }
-      .attribution a {
-        color: hsl(228, 45%, 44%);
-      }
-    </style>
+    <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png"/>
+    <link rel="stylesheet" href="/styles.css">
   </head>
+
   <body>
-    10,000+ of our users love our products.
+    <header class="header" id="profile">
+      <h1 class="headerTitle">10,000+ of our users love our products.</h1>
+      <p class="headerText">
+        We only provide great products combined with excellent customer service.
+        See what our satisfied customers are saying about our services.
+      </p>
+    </header>
+    
+    <aside class="aside">
+      <ul>
+        <li class="stars">
+          <figure class="contentStars">
+            <img src="/images/icon-star.svg" alt="stars">
+            <img src="/images/icon-star.svg" alt="stars">
+            <img src="/images/icon-star.svg" alt="stars">
+            <img src="/images/icon-star.svg" alt="stars">
+            <img src="/images/icon-star.svg" alt="stars">
+          </figure>
+          <h4 class="text">Rated 5 Stars in Reviews</h4>
+        </li>
 
-    We only provide great products combined with excellent customer service.
-    See what our satisfied customers are saying about our services.
+        <li class="stars">
+          <figure>
+            <img src="/images/icon-star.svg" alt="stars">
+            <img src="/images/icon-star.svg" alt="stars">
+            <img src="/images/icon-star.svg" alt="stars">
+            <img src="/images/icon-star.svg" alt="stars">
+            <img src="/images/icon-star.svg" alt="stars">
+          </figure>
+          <h4 class="text">Rated 5 Stars in Report Guru</h4>
+        </li>
+        
+        <li class="stars">
+          <figure>
+            <img src="/images/icon-star.svg" alt="stars">
+            <img src="/images/icon-star.svg" alt="stars">
+            <img src="/images/icon-star.svg" alt="stars">
+            <img src="/images/icon-star.svg" alt="stars">
+            <img src="/images/icon-star.svg" alt="stars">
+          </figure>
+          <h4 class="text">Rated 5 Stars in BestTech</h4>
+        </li>
+      </ul>
+    </aside>
     
-    Rated 5 Stars in Reviews
-    Rated 5 Stars in Report Guru
-    Rated 5 Stars in BestTech
-    
-    Colton Smith 
-    Verified Buyer
-    "We needed the same printed design as the one we had ordered a week prior.
-    Not only did they find the original order, but we also received it in time.
-    Excellent!"
-    
-    Irene Roberts 
-    Verified Buyer
-    "Customer service is always excellent and very quick turn around. Completely
-    delighted with the simplicity of the purchase and the speed of delivery."
-    
-    Anne Wallace 
-    Verified Buyer
-    "Put an order with this company and can only praise them for the very high
-    standard. Will definitely use them again and recommend them to everyone!"
+    <main class="main">
+      <ul class="cards">
+        <li class="card card1">
+          <figure>
+            <img src="/images/image-colton.jpg" alt="Foto de perfil">
+            <figcaption>
+              Colton Smith <span class="status">Verified Buyer</span>
+            </figcaption>
+          </figure>
+          <p>
+            "We needed the same printed design as the one we had ordered a week prior.
+            Not only did they find the original order, but we also received it in time.
+            Excellent!"
+          </p>
+        </li>
+        
+        <li class="card card2">
+          <figure>
+            <img src="/images/image-irene.jpg" alt="Foto de perfil">
+            <figcaption>
+              Irene Roberts <span class="status">Verified Buyer</span>
+            </figcaption>
+          </figure>
+          <p>
+            "Customer service is always excellent and very quick turn around. Completely
+            delighted with the simplicity of the purchase and the speed of delivery."
+          </p>
+        </li>
+        
+        <li class="card card3">
+          <figure>
+            <img src="/images/image-anne.jpg" alt="Foto de perfil">
+            <figcaption>
+              Anne Wallace <span class="status">Verified Buyer</span>
+            </figcaption>
+          </figure>
+          <p>
+            "Put an order with this company and can only praise them for the very high
+            standard. Will definitely use them again and recommend them to everyone!"
+          </p>
+        </li>
+      </ul>
+    </main>
 
-    <div class="attribution">
-      Challenge by
-      <a href="https://www.frontendmentor.io?ref=challenge" target="_blank"
-        >Frontend Mentor</a
-      >. Coded by <a href="#">Your Name Here</a>.
-    </div>
+    <footer class="footer">
+      <div>
+        <span>Challenge by</span>
+          <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor.</a>
+        <br><br>
+        
+        <span>Coded by</span>
+          <a href="https://todointerconectado.com" target="_blank">Todointerconectado | Francisco Carusso</a>
+        
+      </div>
+      <nav class="nav-contactos">
+        <ul class="container-contacts">
+            <li class="container-contacts_redSocial">
+                <figure class="container-contacts_figure">
+                    <a href="https://www.instagram.com/franciscocarusso/" target="_blank">
+                        <img class="container-contacts_figure-img" src="/images/iconos/instagram.png" title="instagram" alt="instagram de francisco carusso - todointerconectado">
+                    </a>
+                </figure>
+            </li>
+            
+            <li class="container-contacts_redSocial">
+                <figure class="container-contacts_figure">
+                    <a href="https://www.linkedin.com/in/franciscocarusso/" target="_blank">
+                        <img class="container-contacts_figure-img" src="/images/iconos/linkedin.png" title="linkedin" alt="linkedin de francisco carusso - todointerconectado">
+                    </a>
+                </figure>
+            </li>
+
+            <li class="container-contacts_redSocial">
+                <figure class="container-contacts_figure">
+                    <a href="https://github.com/Todointerconectado" target="_blank">
+                        <img class="container-contacts_figure-img" src="/images/iconos/github.png" title="github" alt="github de francisco carusso - todointerconectado">
+                    </a>
+                </figure>
+            </li>
+
+            <li class="container-contacts_redSocial">
+                <figure class="container-contacts_figure">
+                    <a href="https://twitter.com/Francar32/" target="_blank">
+                        <img class="container-contacts_figure-img" src="/images/iconos/twiter.png" title="twitter" alt="twitter de francisco carusso - todointerconectado">
+                    </a>
+                </figure>
+            </li>
+
+            <li class="container-contacts_redSocial">
+                <figure class="container-contacts_figure">
+                    <a href="https://www.youtube.com/channel/UCY8m1JDOQFr1RvnrUnOiKMQ" target="_blank">
+                        <img class="container-contacts_figure-img" src="/images/iconos/youtube.png" title="youtube" alt="youtube de francisco carusso - todointerconectado">
+                    </a>
+                </figure>
+            </li>
+
+            <li class="container-contacts_redSocial">
+                <figure class="container-contacts_figure">
+                    <a href="https://wa.me/message/NDFDMQDDCCIBB1/" target="_blank">
+                        <img class="container-contacts_figure-img" src="/images/iconos/whatsapp.png" title="whatsapp" alt="whatsapp de francisco carusso - todointerconectado">
+                    </a>
+                </figure>
+            </li>
+        </ul>
+    </nav>
+
+    <a class="fleche" href="#profile">
+        <img class="symbol" src="/images/iconos/flecha.png" alt="fleche hacia arriba">
+    </a>
+    </footer>
   </body>
 </html>
