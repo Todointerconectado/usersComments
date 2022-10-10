@@ -18,26 +18,29 @@
     padding: 0;
     box-sizing: border-box;
     font-family: 'League Spartan', sans-serif;
+}
+html {
     /* Suavizamos el scroll */
     scroll-behavior: smooth;
 }
 
-body {
+.body {
     margin: 0px auto;
     padding: 80px 20px 0 20px;
     width: 100%;
     height: auto;
     background: url(./images/bg-pattern-top-mobile.svg), url(./images/bg-pattern-bottom-mobile.svg);
     background-repeat: no-repeat;
-    background-position: top left, bottom right;
+    background-position: top left, bottom -275px right;
+}
 
+.bodyContainer {
     display: flex;
     flex-direction: column;
     gap: 30px;
 }
 
 /* ------------ HEADER - TITLE ------------ */
-
 .headerTitle {
     padding: 0 0 30px 0;
     width: 100%;
@@ -48,7 +51,6 @@ body {
     line-height: 30px;
     text-align: center;
 }
-
 .headerText {
     padding: 0 28px;
     color: var(--darkGrayishMagenta);
@@ -61,15 +63,19 @@ body {
 /* ------------ ASIDE - STARS------------ */
 .aside ul {
     margin: 0px auto;
+    width: 100%;
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
 }
 
 .stars {
-    border-radius: 8px;
+    border-radius: 6px;
     list-style: none;
     width: 100%;
+    max-width: 430px;
     height: 80px;
     background: var(--lightGrayishMagenta);
     display: flex;
@@ -81,9 +87,6 @@ body {
 .stars figure {
     text-align: center;
 }
-/* .stars figure::before {
-    content: "⭐ ⭐ ⭐ ⭐ ⭐";
-} */
 .text {
     font-weight: 700;
     color: var(--darkGrayishMagentaMax);
@@ -91,28 +94,31 @@ body {
 }
 
 /* ------------ MAIN - cards ------------ */
+
 .cards {
+    margin: 0 auto;
+    width: 100%;
+    height: auto;
     display: flex;
     flex-direction: column;
     gap: 20px;
-    justify-content: space-between;
+    justify-content: center;
     align-items: center;
 }
-
 .card {
     overflow: hidden;
     border-radius: 10px;
     padding: 37px;
     background: var(--veryDarkMagenta);
+    width: 100%;
     max-width: 430px;
-    height: 247px;
+    height: auto;
     color: var(--white);
     display: grid;
     gap: 32px;
     grid-template-columns: 1fr;
-    grid-template-rows: repeat(2, 1fr);
+    grid-template-rows: repeat(1fr 2fr);
 }
-
 .card figure {
     height: 50px;
     display: grid;
@@ -137,26 +143,22 @@ body {
     line-height: 1.3;
 }
 
-
-
 /* ------------ FOOTER ------------ */
 .footer {
-    /* border: 1px solid brown; */
     width: 100%;
     height: auto;
-    font-size: 11px;
+    font-size: 13px;
     text-align: center;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
 }
-
 .footer a {
     color: hsl(228, 45%, 44%);
 }
 
-/*---------------------------------- Redes social's ----------------------------------*/
+/* ------------ Redes social's ------------ */
 .container-contacts {
     margin: 10px 0;
     width: 100%;
@@ -210,12 +212,11 @@ body {
 
 /* ---- Boton de subida ----*/
 .fleche{
-    /* border: 1px solid red; */
     margin: 10px auto;
     border-radius: 50%;
     padding: 0;
-    width: 30px;
-    height: 30px;
+    width: 32px;
+    height: auto;
     cursor: pointer;
     overflow: hidden;
     display: flex;
@@ -229,4 +230,140 @@ body {
 .symbol {
     width: 100%;
     height: 100%;
+}
+
+/* ------- > 430px a los 770px ------- */
+@media only screen and (min-width: 431px) {
+    .body {
+        background: 
+        url(./images/bg-pattern-top-desktop.svg),
+        url(./images/bg-pattern-bottom-desktop.svg);
+        background-repeat: no-repeat;
+        background-position: top left, bottom right;
+        background-size: 400px;
+    }
+
+    /* ------------ ASIDE - STARS------------ */
+    .stars {
+        height: 50px;
+        display: flex;
+        flex-direction: row;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .stars1 {
+        align-self: flex-start;
+    }
+    .stars3 {
+        align-self: flex-end;
+    }
+
+    /* ------------ MAIN - cards ------------ */
+
+    .card1 {
+        align-self: flex-start;
+    }
+    .card3 {
+        align-self: flex-end;
+    }
+
+    /* ------------ FOOTER ------------ */
+    .footer {
+        font-size: 16px;
+    }
+
+    /* ------------ Redes social's ------------ */
+    .container-contacts_figure-img,
+    .fleche {
+        width: 45px;
+    }
+}
+
+/* ------- > 771px a los 894px ------- */
+@media only screen and (min-width: 771px) {
+    /* ------------ MAIN - cards ------------ */
+    .cards {
+        flex-direction: row;
+        flex-wrap: wrap;
+    }
+    
+    .card {
+        max-width: 350px;
+    }
+}
+
+/* ------- > 895px a los 1080px ------- */
+@media only screen and (min-width: 895px) {
+    .body {
+        background-size: 580px;
+    }
+    .bodyContainer {
+        display: grid;
+        grid-template-columns: repeat(12, 1fr);
+        row-gap: 25px;
+    }
+
+    .header {
+        grid-column: 1/6;
+        margin-left: 20px;
+    }
+
+    .aside {
+        grid-column: 6/-1;
+        margin-right: 20px;
+    }
+
+    .main {
+        grid-column: 1/-1;
+    }
+
+    .footer {
+        grid-column: 1/-1;
+        margin-top: 100px;
+    }
+    .footer div {
+        display: flex;
+        gap: 15px;
+    }
+}
+
+/* > 1440px */
+@media only screen and (min-width: 895px) {
+    .body {
+        padding: 180px 0 0 0;
+    }
+
+    .bodyContainer {
+        margin: 0 auto;
+        max-width: 1200px;
+    }
+
+    .header {
+        padding: 0;
+        max-width: 350px;
+    }
+
+    .headerTitle {
+        padding: 5px 0 0px 0;
+        width: auto;
+        font-size: 45px;
+        text-align: left;
+        line-height: 35px;
+    }
+
+    .headerText {
+        padding: 25px 0 0 0;
+        width: auto;
+        text-align: left;
+    }
+
+    .aside ul {
+        max-width: 600px;
+    }
+
+    .cards {
+        min-height: 280px;
+        height: auto;
+    }
 }
