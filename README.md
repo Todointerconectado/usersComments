@@ -10,6 +10,14 @@ Thanks for checking out this front-end coding challenge.
 
 **To do this challenge, you need a basic understanding of HTML and CSS.**
 
+## Challenge completed by Francesco Caruso! 💯
+
+Thanks for checking out this front-end coding challenge.
+
+Access the resolution of the challenge: [Todointerconectado.com/usersComments/](https://todointerconectado.com/usersComments/)
+
+**To do this challenge, you need a basic understanding of HTML and CSS.**
+
 ## The challenge
 
 Your challenge is to build out this social proof section and get it looking as close to the design as possible.
