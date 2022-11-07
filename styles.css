@@ -105,6 +105,7 @@ html {
     justify-content: center;
     align-items: center;
 }
+
 .card {
     overflow: hidden;
     border-radius: 10px;
@@ -118,7 +119,16 @@ html {
     gap: 32px;
     grid-template-columns: 1fr;
     grid-template-rows: repeat(1fr 2fr);
+    transition: 
+                transform 300ms ease,
+                box-shadow 300ms ease;
+    
 }
+.card:hover {
+    transform: scale(1.08);
+    box-shadow: 2px 2px 10px black;
+}
+
 .card figure {
     height: 50px;
     display: grid;
