@@ -1,6 +1,6 @@
 # Frontend Mentor - Social proof section
 
-![Design preview for the Social proof section coding challenge](./design/desktop-preview.jpg)
+![Design preview for the Social proof section coding challenge](./images/miniatura.png)
 
 ## Welcome! 👋
 
@@ -14,7 +14,7 @@ Thanks for checking out this front-end coding challenge.
 
 Thanks for checking out this front-end coding challenge.
 
-Access the resolution of the challenge: [Todointerconectado.com/usersComments/](https://todointerconectado.com/usersComments/)
+Access the resolution of the challenge: [https://todointerconectado.com/usersComments/](https://todointerconectado.com/usersComments/)
 
 **To do this challenge, you need a basic understanding of HTML and CSS.**
 
